@@ -1,0 +1,10 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.jumbotron{
+    background-image: url("../images/jumbo.jpg");
+    background-size: cover;
+    height: 500px;
+}
