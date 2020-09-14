@@ -1,1 +1,1 @@
-## WSFood ~ laravel
+## WSFood
