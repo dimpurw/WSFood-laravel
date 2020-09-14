@@ -6,5 +6,13 @@ html, body {
 .jumbotron{
     background-image: url("../images/jumbo.jpg");
     background-size: cover;
-    height: 500px;
+    height: 600px;
+}
+
+.description{
+    margin-top: 100px;
+}
+
+.card-view{
+    margin-top: 100px;
 }
