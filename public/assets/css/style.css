@@ -10,9 +10,14 @@ html, body {
 }
 
 .description{
-    margin-top: 100px;
+    padding-top: 50px;
 }
 
 .card-view{
-    margin-top: 100px;
+    margin-top: 30px;
+}
+
+.bg-view{
+    background-color: #e4e4e4;
+    height: 200px;
 }
