@@ -17,6 +17,7 @@
 
     </head>
     <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <nav class="navbar navbar-light">
             <a class="navbar-brand" href="#">
@@ -31,24 +32,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <a class="nav-link" href="#">Food</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#">Drinks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Snack</a>
             </li>
           </ul>
           <nav class="navbar navbar-light">
@@ -58,20 +51,31 @@
             </form>
           </nav>
         </div>
-      </nav>
+    </nav>
+    <!-- end navbar -->
 
-
-
+    <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4 text-light font-weight-bold">Fluid jumbotron</h1>
+          <h1 class="display-4 text-light font-weight-bold mt-5">Fluid jumbotron</h1>
           <p class="lead text-light">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
         </div>
     </div>
+    <!-- end jumbotron -->
 
-    
+    <!-- description wsfood -->
+    <p class="text-md-center description">wsfood is a web about various foods, <br> drinks and snacks, with the addition of this website can make it easier for us to find food</p>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <button class="btn btn-primary">Centered button</button>
+        </div>
+      </div>
+    </div>
+    <!-- end description -->
 
-    <div class="card-deck mt-2">
+    <!-- card view -->
+    <div class="card-deck card-view">
       <div class="card">
         <img src="{{ URL::to('/assets/images/Chicken_noodle_soup.jpg')}}" class="card-img-top h-50" alt="jumbotron-image">
         <div class="card-body">
@@ -103,7 +107,7 @@
         </div>
       </div>
     </div>
-
+    <!-- end card view -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
