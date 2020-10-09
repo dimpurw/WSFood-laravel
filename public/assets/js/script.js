@@ -14,3 +14,22 @@ function writeText() {
 }
 
 setInterval(writeText, 100);
+
+// parallax
+$(window).scroll(function () {
+    var wScroll = $(this).scrollTop();
+
+    // jumbotron
+    $(".jumbotron h1").css({
+        transform: "translate(0px, " + wScroll / 2 + "%)",
+    });
+
+    $(".jumbotron p").css({
+        transform: "translate(0px, " + wScroll / 1.2 + "%)",
+    });
+
+    // card
+    if (wScroll > $(".card").offset().top - 250) {
+        $(".card").addClass("muncul");
+    }
+});
