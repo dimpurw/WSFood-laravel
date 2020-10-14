@@ -16,6 +16,10 @@ function writeText() {
 setInterval(writeText, 100);
 
 // parallax
+
+
+
+// scroll
 $(window).scroll(function () {
     var wScroll = $(this).scrollTop();
 
@@ -30,6 +34,16 @@ $(window).scroll(function () {
 
     // card
     if (wScroll > $(".card").offset().top - 250) {
-        $(".card").addClass("muncul");
+        $('.card').each(function (i) {
+            setTimeout(function () {
+                $(".card").eq(i).addClass("muncul");
+            }, 500 * (i + 1));
+        });
+    }
+
+    // testi
+    if (wScroll > $('.pkiri').offset().top - 250) {
+        $('.pkiri').addClass('showtext');
+        $('.pkanan').addClass('showtext');
     }
 });
