@@ -30,10 +30,13 @@ body {
 
 .card {
     opacity: 0;
+    transform: translate(0, -40px);
+    transition: 0.5s;
 }
 
 .card.muncul {
     opacity: 1;
+    transform: translate(0, 0);
 }
 
 .card img {
@@ -56,4 +59,21 @@ body {
 .bg-footer {
     margin-top: 150px;
     background-color: #dad8d8;
+}
+
+.pkanan,
+.pkiri {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 1s;
+}
+
+.pkiri {
+    transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pkiri.showtext,
+.pkanan.showtext {
+    opacity: 1;
+    transform: translate(0, 0);
 }
