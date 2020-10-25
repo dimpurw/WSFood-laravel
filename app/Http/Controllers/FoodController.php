@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class FoodController extends Controller
 {
-    public function index()
+    public function food()
     {
-        return view('food/index');
+        return view('menu.food');
     }
 }
